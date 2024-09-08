@@ -20,11 +20,14 @@
 
 ## 기능 요구사항
 
-- [ ] **서울의 현재 날씨 표시**
+- [x] **서울의 현재 날씨 표시**
 
-  - [OpenWeather Current Weather Data](https://openweathermap.org/current)를 사용하여 서울의 현재 날씨를 표시합니다.
-  - 온도는 °C로 표현되며, API 응답도 °C로 받습니다.
-  - 날씨 아이콘은 [icon URL](https://openweathermap.org/weather-conditions#How-to-get-icon-URL)을 참고하여 표시합니다.
+  - [x] [OpenWeather Current Weather Data](https://openweathermap.org/current)를 사용하여 서울의 현재 날씨를 표시합니다.
+    - `https://api.openweathermap.org/data/2.5/weather?lat=37.568&lon=126.978&appid=${APIKEY}&units=metric&lang=kr`;
+  - [x] 온도는 °C로 표현되며, API 응답도 °C로 받습니다.
+    - API 요청시 `units=metric` 추가
+  - [x] 날씨 아이콘은 [icon URL](https://openweathermap.org/weather-conditions#How-to-get-icon-URL)을 참고하여 표시합니다.
+    - `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
 
 - [ ] **현재 날씨 클릭 시 지역의 5일간 기상 상태 표시**
 
@@ -38,13 +41,13 @@
 ## 프로그래밍 요구사항
 
 - [ ] 비동기 통신에서 실패 할 경우를 대비해요.
-    - 비동기 통신에서 일어날 수 있는 다양한 상황을 고려해봐요.
+  - 비동기 통신에서 일어날 수 있는 다양한 상황을 고려해봐요.
 - [ ] 특정한 패턴에 사고를 끼워 맞추지 않고 단지 역할과 책임에 따라 관심사를 분리해요.
-    - 어떠한 관점에서 역할과 책임에 따라 관심사를 분리하였는지 리뷰어에게 설명할 수 있어야 해요.
+  - 어떠한 관점에서 역할과 책임에 따라 관심사를 분리하였는지 리뷰어에게 설명할 수 있어야 해요.
 - [ ] 라우터를 직접 구현해봐요.
-    - 라우터를 직접 구현해보며 SPA가 어떻게 구현되는지 이해해요.
-    - 라우팅을 구현하기 위해 사용되는 기술들에 대한 이해
-        - URL 구조
-        - History 객체를 기반으로 어떻게 브라우저에서 상태를 관리하는지
-- [ ]Vainilla Scripts로 SPA 라우터를 직접 구현해봐요.
-    - 라우터를 직접 사용해보며 DX를 보기 (내가 작성한 라우터를 내가 직접 쓰는데, 쓰기 편한가?)
+  - 라우터를 직접 구현해보며 SPA가 어떻게 구현되는지 이해해요.
+  - 라우팅을 구현하기 위해 사용되는 기술들에 대한 이해
+    - URL 구조
+    - History 객체를 기반으로 어떻게 브라우저에서 상태를 관리하는지
+- [ ] Vainilla Scripts로 SPA 라우터를 직접 구현해봐요.
+  - 라우터를 직접 사용해보며 DX를 보기 (내가 작성한 라우터를 내가 직접 쓰는데, 쓰기 편한가?)
