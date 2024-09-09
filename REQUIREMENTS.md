@@ -9,7 +9,7 @@
   - 실제 동작하는 API를 통한 비동기 통신을 구현합니다.
 - **UX**
   - 사용자 경험을 고려한 화면을 구현합니다.
-- **컴포넌트 (선택 사항)**
+- [x] **컴포넌트 (선택 사항)**
   - 컴포넌트 개념을 학습하고, 컴포넌트 단위로 모듈화하여 개발합니다.
   - UI를 컴포넌트 단위로 생각하고 개발하는 연습을 합니다.
   - 재사용 가능한 컴포넌트를 설계해봅니다.
@@ -31,7 +31,7 @@
 
 - [ ] **현재 날씨 클릭 시 지역의 5일간 기상 상태 표시**
 
-  - [OpenWeather 5day Weather Forecast Data](https://openweathermap.org/forecast5)를 사용하여 해당 지역의 앞으로 5일간의 기상 상태를 3시간 간격으로 표시합니다.
+  - [x] [OpenWeather 5day Weather Forecast Data](https://openweathermap.org/forecast5)를 사용하여 해당 지역의 앞으로 5일간의 기상 상태를 3시간 간격으로 표시합니다.
   - 리스트에 대한 Skeleton UI를 구현합니다.
 
 - [ ] **배포**

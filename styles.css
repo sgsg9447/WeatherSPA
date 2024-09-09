@@ -2,10 +2,10 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
   margin: 0;
   color: #666;
+  overflow-y: auto; 
 }
 
 .weather-info-card {
@@ -24,6 +24,7 @@ body {
 .weather-time {
   font-size: 14px;
   color: #666;
+  font-weight: 600;
   margin-bottom: 16px;
 }
 
@@ -32,9 +33,6 @@ body {
   align-items: center;
   margin-bottom: 16px;
   gap: 40px;
-}
-
-.weather-summary {
 }
 
 .weather-summary-icon {
@@ -76,4 +74,31 @@ body {
 .temperature-current-value,
 .temperature-min-max-value {
   font-size: 12px;
+}
+
+.detail-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  color: #666;
+}
+
+.detail-location {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.detail-time {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.weather-forecast-time {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
