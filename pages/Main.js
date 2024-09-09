@@ -1,5 +1,5 @@
-import { renderWeatherDetail } from './components/WeatherDetail';
-import { formatDate } from './utils/date';
+import { renderWeatherDetail } from '../components/WeatherDetail';
+import { formatDate } from '../utils/date';
 
 const APIKEY = import.meta.env.VITE_OPENWEATHERMAP_API_KEY;
 const APIURL = `https://api.openweathermap.org/data/2.5/weather?lat=37.568&lon=126.978&appid=${APIKEY}&units=metric&lang=kr`;
@@ -15,6 +15,10 @@ const renderWeatherData = (data) => {
 
   const weatherInfoCard = document.createElement('div');
   weatherInfoCard.classList.add('weather-info-card');
+  weatherInfoCard.classList.add('cleckable');
+  weatherInfoCard.addEventListener('click', () => {
+    location.href = '/detail';
+  });
 
   const weatherLocation = document.createElement('div');
   weatherLocation.classList.add('weather-location');
@@ -44,4 +48,6 @@ async function getData() {
   }
 }
 
-await getData();
+export default function Main() {
+  getData();
+}

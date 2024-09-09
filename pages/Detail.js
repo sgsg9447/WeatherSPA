@@ -1,5 +1,5 @@
-import { renderWeatherDetail } from './components/WeatherDetail';
-import { formatDate } from './utils/date';
+import { renderWeatherDetail } from '../components/WeatherDetail';
+import { formatDate } from '../utils/date';
 
 const APIKEY = import.meta.env.VITE_OPENWEATHERMAP_API_KEY;
 const APIURL = `https://api.openweathermap.org/data/2.5/forecast?lat=37.568&lon=126.978&appid=${APIKEY}&units=metric&lang=kr`;
@@ -72,4 +72,6 @@ async function getData() {
   }
 }
 
-await getData();
+export default function Detail() {
+  getData();
+}
